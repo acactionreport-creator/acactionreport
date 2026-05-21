@@ -17,48 +17,25 @@ body {
 
 .hero {
     background-image: url('ABFA02AD-0DB9-4B6E-8179-E63955DA9EC5.png');
-    background-size: cover;
-    background-position: center;
-    padding: 80px 20px;
-    position: relative;
-}
-    
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.65);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 420px;
+    background-color: #000;
+    border-bottom: 1px solid #7d5a1f;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.logo {
-    width: 170px;
-    border-radius: 50%;
-    box-shadow: 0 0 25px rgba(255,0,0,0.45);
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #d4af37;
+.hero-actions {
+    padding: 30px 20px 50px;
+    background: #050505;
 }
 
 .tagline {
-    font-size: 1.2rem;
-    max-width: 700px;
+    font-size: 1.15rem;
+    max-width: 750px;
     margin: auto;
     line-height: 1.6;
-}
-
-.section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
+    color: #d8d8d8;
 }
 
 .buttons {
@@ -81,10 +58,49 @@ h1 {
     background: #b22222;
 }
 
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #d4af37;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.section p {
+    line-height: 1.8;
+    color: #d0d0d0;
+    font-size: 1.05rem;
+}
+
 .footer {
-    padding: 30px;
-    color: #999;
+    padding: 35px;
+    color: #8a8a8a;
     font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        height: 240px;
+        background-size: contain;
+    }
+
+    .tagline {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .button {
+        display: block;
+        width: 80%;
+        margin: 12px auto;
+    }
+
 }
 
 </style>
@@ -92,27 +108,25 @@ h1 {
 
 <body>
 
-<div class="hero">
-    <div class="hero-content">
+<div class="hero"></div>
 
-        <img class="logo" src="0E0C9F5F-E2D5-46F9-A143-EEA986FFB559.png">
+<div class="hero-actions">
 
-        <h1>AC Action Report</h1>
+    <p class="tagline">
+        Casino-floor intel, table conditions, crowd notes,
+        and Atlantic City updates.
+    </p>
 
-        <p class="tagline">
-            Casino-floor intel, table conditions, crowd notes, and Atlantic City updates.
+    <div class="buttons">
+        <a class="button" href="https://x.com" target="_blank">Follow on X</a>
 
-</p>
-        </p>
+        <a class="button" href="https://discord.com" target="_blank">Join Discord</a>
 
-        <div class="buttons">
-            <a class="button" href="https://x.com/acactionreport?s=21&t=xUa59caEDWtA8nMaH4OuDA">Follow on X</a>
-            <a class="button" href="#">Join Discord</a>
-            <a class="button" href="#">Patreon</a>
-            <a class="button" href="#">Instagram</a>
-        </div>
+        <a class="button" href="https://patreon.com" target="_blank">Patreon</a>
 
+        <a class="button" href="https://instagram.com" target="_blank">Instagram</a>
     </div>
+
 </div>
 
 <div class="section">
