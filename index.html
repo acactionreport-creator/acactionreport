@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AC Action Report</title>
 
 <style>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
 
 body {
     margin: 0;
@@ -57,7 +66,14 @@ body {
 
     .story-card {
     padding:35px 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
+
+.story-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(212,175,55,0.18) !important;
+}
+
     
 .section h2 {
     color: #d4af37;
@@ -155,9 +171,9 @@ body {
 
 <body>
 
-<div class="hero"></div>
+<div class="hero" data-aos="fade-in"></div>
 
-<div class="hero-actions">
+<div class="hero-actions" data-aos="fade-up">
 
     <p class="tagline">
     Atlantic City’s independent casino-floor intelligence.
@@ -175,7 +191,7 @@ body {
 
 </div>
 
-<div class="section story-card" style="
+<div class="section story-card" data-aos="fade-up" style="
 border:1px solid #5a3b00;
 border-radius:18px;
 background:linear-gradient(to bottom,#111,#070707);
@@ -222,7 +238,7 @@ Read the preview →
 </div>
     
 
-<div class="section story-card" style="
+<div class="section story-card" data-aos="fade-up" style="
 border:1px solid #5a3b00;
 border-radius:18px;
 background:linear-gradient(to bottom,#111,#070707);
@@ -265,7 +281,7 @@ Read the full ACAR report →
     
 <div class="section">
 
-<div class="section story-card" style="
+<div class="section story-card" data-aos="fade-up" style="
 border:1px solid #5a0000;
 border-radius:18px;
 background:linear-gradient(to bottom,#190000,#070707);
@@ -308,7 +324,7 @@ Read the full ACAR breakdown →
     
 </div>
 
-<div class="section story-card" style="
+<div class="section story-card" data-aos="fade-up" style="
 border:1px solid #5a3b00;
 border-radius:18px;
 background:linear-gradient(to bottom,#111,#070707);
@@ -349,7 +365,7 @@ Read the full ACAR report →
 
 </div>
 
-<div class="section story-card" style="
+<div class="section story-card" data-aos="fade-up" style="
 border:1px solid #333;
 border-radius:18px;
 background:linear-gradient(to bottom,#101010,#070707);
@@ -693,5 +709,14 @@ Boardwalk. Marina. Regional casino intelligence.
 
 </div>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+    
 </body>
 </html>
